@@ -1,7 +1,7 @@
 # Author: Jian Li (jian.li7@wework.com)
 #
 # The main to start a nlp demo server. The server will accept user input from web ui elements, and render the results back.
-import spacy
+from spacy import load
 from spacy import displacy
 from flask import Flask
 from flask import request
