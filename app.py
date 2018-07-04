@@ -8,9 +8,7 @@ from flask import request
 from flask import render_template
 
 
-
 nlp = spacy.load('en')
-
 app = Flask(__name__)
 
 @app.route('/')
