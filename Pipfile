@@ -2,6 +2,7 @@
 gunicorn = "*"
 spacy = "*"
 flask = "*"
+en_core_web_sm = "*"
 
 [requires]
 python_full_version = "2.7.15"
