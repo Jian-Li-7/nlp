@@ -6,9 +6,9 @@ from spacy import displacy
 from flask import Flask
 from flask import request
 from flask import render_template
+import en_core_web_sm
 
-
-nlp = spacy.load('en')
+nlp = en_core_web_sm.load()
 app = Flask(__name__)
 
 @app.route('/')
