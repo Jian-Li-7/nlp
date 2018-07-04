@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file -
+web: pip freeze && gunicorn app:app --log-file -
