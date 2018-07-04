@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def serve():
-    query = request.args.get('q', '')
+    query = request.args.get('q', '').decode('utf8', 'ignore')
     doc = nlp(query)
     entities = ''
     if doc.ents:
