@@ -2,14 +2,10 @@
 #
 # The main to start a nlp demo server. The server will accept user input from web ui elements, and render the results back.
 import spacy
-import sputnik
-import spacy.about
 from spacy import displacy
 from flask import Flask
 from flask import request
 from flask import render_template
-
-package = sputnik.install('spacy', spacy.about.__version__, spacy.about.__default_model__)
 
 nlp = spacy.load('en')
 app = Flask(__name__)
